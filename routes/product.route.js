@@ -34,7 +34,7 @@ router.put(
 );
 
 router.delete(
-  "/product/comment/delete/:id",
+  "/product/comment/delete/:id ",
   auth.checkAuth,
   productController.delete_comment
 );

@@ -18,7 +18,7 @@ app.use(userRoutes)
 app.use(productRoutes)
 
 mongoose.connect('mongodb://127.0.0.1:27017/GlamUp').then(()=>{
-        app.listen(1026,()=>{
+        app.listen(1025,()=>{
             console.log(`Server Started`)
         })
 }).catch((err)=>{
