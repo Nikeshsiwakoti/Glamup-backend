@@ -44,7 +44,7 @@ module.exports.register_user = async function (req, res) {
       console.log(randomnumber);
 
       const subject = "This is your verification code";
-      const text = "Code:" + randomnumber;
+      const text = "Code: " + randomnumber;
       var mailOptions = {
         from: "glamup.project@gmail.com",
         to: email,
@@ -72,7 +72,7 @@ module.exports.register_user = async function (req, res) {
         });
       } else {
         return res.json({
-          message: "Verification code not registered",
+          message: "User not registered",
           success: false,
         });
       }
